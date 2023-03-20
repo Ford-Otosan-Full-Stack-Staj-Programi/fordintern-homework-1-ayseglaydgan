@@ -32,4 +32,3 @@ methodlari gondermeyiniz.
 
 Ödevinizin teslim tarihi 24.03.2023 saat 23.59
 
-vvhg
