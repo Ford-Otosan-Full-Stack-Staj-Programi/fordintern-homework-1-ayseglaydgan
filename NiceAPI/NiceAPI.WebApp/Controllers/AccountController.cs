@@ -17,12 +17,12 @@ namespace NiceAPI.WebApp.Controllers
             this.unitOfWork = unitOfWork;
         }
 
-        /*[HttpGet]
+        [HttpGet]
         public List<Account> GetAll()
         {
             List<Account> accounts = unitOfWork.AccountRepository.GetAll();
             return accounts;
-        }*/
+        }
 
         
         [HttpGet("{id}")]
@@ -32,12 +32,12 @@ namespace NiceAPI.WebApp.Controllers
             return account;
         }
 
-        [HttpGet]
+        /*[HttpGet]
         public IEnumerable<Account> GetWithWhere(int id)
         {
             IEnumerable<Account> accounts = unitOfWork.AccountRepository.Where(e => e.Id == id);
             return accounts;
-        }
+        }*/
 
         [HttpDelete("{id}")]
         public OkResult Delete(int id)

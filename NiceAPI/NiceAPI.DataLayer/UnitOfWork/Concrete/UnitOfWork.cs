@@ -9,10 +9,13 @@ namespace NiceAPI.DataLayer
         private bool disposed;
         public IGenericRepository<Account> AccountRepository { get; private set; }
 
+        public IGenericRepository<Person> PersonRepository { get; private set; }
+
         public UnitOfWork(AppDbContext context)
         {
             appContext = context;
             AccountRepository = new GenericRepository<Account>(context);
+            PersonRepository = new GenericRepository<Person>(context);
         }
 
         //IT MUST BE SAVE TO SEEN IN DB 

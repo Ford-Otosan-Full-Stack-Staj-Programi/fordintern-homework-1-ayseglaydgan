@@ -12,6 +12,7 @@ namespace NiceAPI.DataLayer
         }
 
         public DbSet<Account>? Account { get; set; }
+        public DbSet<Person>? Person { get; set; }
 
         //  you have defined entity type configurations in your project 
         //and you want to ensure that those configurations are applied to the model when you use Entity Framework Core to interact with the database.
@@ -22,3 +23,5 @@ namespace NiceAPI.DataLayer
         }
     }
 }
+
+
