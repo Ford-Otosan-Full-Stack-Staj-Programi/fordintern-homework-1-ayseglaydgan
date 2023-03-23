@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiceAPI.DtoLayer", "NiceAPI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiceAPI.WebApp", "NiceAPI.WebApp\NiceAPI.WebApp.csproj", "{695AFC43-5DC5-43D0-AE29-AA9AF3211681}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiceAPI.DataLayer", "NiceAPI.DataLayer\NiceAPI.DataLayer.csproj", "{13C7F380-9846-4998-A0D0-5319751566EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiceAPI.DataLayer", "NiceAPI.DataLayer\NiceAPI.DataLayer.csproj", "{D9F90039-5FC9-40BA-8D72-6DEB93195B90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{695AFC43-5DC5-43D0-AE29-AA9AF3211681}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{695AFC43-5DC5-43D0-AE29-AA9AF3211681}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{695AFC43-5DC5-43D0-AE29-AA9AF3211681}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13C7F380-9846-4998-A0D0-5319751566EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13C7F380-9846-4998-A0D0-5319751566EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13C7F380-9846-4998-A0D0-5319751566EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13C7F380-9846-4998-A0D0-5319751566EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F90039-5FC9-40BA-8D72-6DEB93195B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F90039-5FC9-40BA-8D72-6DEB93195B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F90039-5FC9-40BA-8D72-6DEB93195B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F90039-5FC9-40BA-8D72-6DEB93195B90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1480,6 +1480,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "NiceAPI.BaseClass/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/NiceAPI.BaseClass.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NiceAPI.BaseClass.dll": {}
+        }
       }
     }
   },
@@ -5560,15 +5570,20 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "NiceAPI.BaseClass/1.0.0": {
+      "type": "project",
+      "path": "../NiceAPI.BaseClass/NiceAPI.BaseClass.csproj",
+      "msbuildProject": "../NiceAPI.BaseClass/NiceAPI.BaseClass.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
-      "C:\\Users\\aaydoga6\\source\\Repos\\fordintern-homework-1-ayseglaydgan\\NiceAPI\\FordApi.Base\\FordApi.Base.csproj",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.5",
       "Newtonsoft.Json >= 13.0.1",
+      "NiceAPI.BaseClass >= 1.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.2"
     ]
   },
@@ -5607,8 +5622,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\aaydoga6\\source\\Repos\\fordintern-homework-1-ayseglaydgan\\NiceAPI\\FordApi.Base\\FordApi.Base.csproj": {
-              "projectPath": "C:\\Users\\aaydoga6\\source\\Repos\\fordintern-homework-1-ayseglaydgan\\NiceAPI\\FordApi.Base\\FordApi.Base.csproj"
+            "C:\\Users\\aaydoga6\\source\\Repos\\fordintern-homework-1-ayseglaydgan\\NiceAPI\\NiceAPI.BaseClass\\NiceAPI.BaseClass.csproj": {
+              "projectPath": "C:\\Users\\aaydoga6\\source\\Repos\\fordintern-homework-1-ayseglaydgan\\NiceAPI\\NiceAPI.BaseClass\\NiceAPI.BaseClass.csproj"
             }
           }
         }
@@ -5664,16 +5679,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\aaydoga6\\source\\Repos\\fordintern-homework-1-ayseglaydgan\\NiceAPI\\FordApi.Base\\FordApi.Base.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\aaydoga6\\source\\Repos\\fordintern-homework-1-ayseglaydgan\\NiceAPI\\FordApi.Base\\FordApi.Base.csproj",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

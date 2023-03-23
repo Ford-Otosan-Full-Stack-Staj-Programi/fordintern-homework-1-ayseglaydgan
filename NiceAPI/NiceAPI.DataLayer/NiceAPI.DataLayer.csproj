@@ -22,7 +22,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\FordApi.Base\FordApi.Base.csproj" />
+	  <ProjectReference Include="..\NiceAPI.BaseClass\NiceAPI.BaseClass.csproj" />
 	</ItemGroup>		
 
 
