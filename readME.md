@@ -1,13 +1,34 @@
-FordIntern-v1
-Asagida verilen modeli kullanarak GetAll, GetById , Put , Post , Delete methodlarini icen
-bir controller implement ediniz.
-EF ile generic repository ve UnitOfWork kullanabilirsiniz. (Opsiyonel)
-Put  ve Post apilerin de model validation hazirlayiniz.  Fluent validation kullaniniz.
-Extra olarak 2 tane alana gore (Query parameter) filtreleme yapan Filter apisi ekleyiniz
-(GET) ve WHERE sarti ile database den filtreleme yapiniz.
-SOLID e uymaya ozen gosteriniz .
-Proje icerisinde sadece odev ile ilgili kisimlara yer veriniz. Kullanilmayan controller ve
-methodlari gondermeyiniz.
+Asagida Verilen Modeli Kullanarak CRUD Islemleri Gerceklestiren Bir Controller
+Bu proje, Asagida verilen modeli kullanarak GetAll, GetById, Put, Post, Delete methodlarini iceren bir controllerin gelistirilmesini aciklar. EF ile generic repository ve UnitOfWork kullanmak istege baglidir. Put ve Post API'lerinde model validasyonu hazirlanmalidir. Bunun icin Fluent validation kullanilabilir. Ayni zamanda, Query parameterlere gore filtreleme yapan iki Filter API'si eklenmistir. (GET) ve WHERE sarti ile database den filtreleme yapilmaktadir.
+
+Proje, SOLID prensiplerine uymaya ozen gosterir. Kullanilmayan controller ve methodlar projeye dahil edilmez. Projenin odak noktasi, asagida belirtilen gereksinimleri karsilamaktir.
+
+Gereksinimler
+Asagida verilen bir model kullanilarak bir controller gelistirilmelidir.
+Controller, GetAll, GetById, Put, Post, ve Delete methodlarini icerir.
+EF ile generic repository ve UnitOfWork kullanmak istege baglidir.
+Put ve Post API'lerinde model validasyonu yapilmalidir. Bu icin Fluent validation kullanabilirsiniz.
+Query parametrelere gore filtreleme yapan iki Filter API'si eklenmistir. (GET) ve WHERE sarti ile database den filtreleme yapilmaktadir.
+Proje, SOLID prensiplerine uymaya ozen gosterir.
+Kullanilmayan controller ve methodlar projeye dahil edilmez.
+Kurulum
+Projenin calistirilabilmesi icin gereksinimler asagidaki gibidir:
+
+.NET 5.0
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Tools
+FluentValidation
+Projenin calistirilmasi icin asagidaki adimlar izlenmelidir:
+
+Repository'yi kopyalayin.
+Proje klasorunde terminali acin.
+dotnet restore komutunu calistirin.
+dotnet run komutunu calistirin.
+Kullanim
+API, REST mimarisini kullandigi icin, HTTP istekleri kullanilarak calistirilabilir. Asagidaki methodlar desteklenmektedir:
+*Not: PROJE ICINDE ÖRNEK OLARAK "STAFF" ŞEKLİNDE ADLANDIRILAN CLASS YAPISI "PERSON" OLARAK DEĞİŞTİRİLMİŞ VE O ŞEKİLDE KULLANILMIŞTIR.
  
                                 public class Staff 
                                    {
