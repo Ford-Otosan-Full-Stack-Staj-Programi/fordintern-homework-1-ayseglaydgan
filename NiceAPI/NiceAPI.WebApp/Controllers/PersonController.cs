@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using NiceAPI.DataLayer;
+using FluentValidation.Results;
+using FluentValidation;
 
 namespace NiceAPI.WebApp.Controllers
 {
@@ -12,9 +14,11 @@ namespace NiceAPI.WebApp.Controllers
     public class PersonController : ControllerBase
     {
         private readonly IUnitOfWork unitOfWork;
-        public PersonController(IUnitOfWork unitOfWork)
+        private IValidator<Person> validator;
+        public PersonController(IUnitOfWork unitOfWork, IValidator<Person> validator)
         {
             this.unitOfWork = unitOfWork;
+            this.validator = validator;
         }
 
         [HttpGet]
@@ -40,17 +44,42 @@ namespace NiceAPI.WebApp.Controllers
             return persons;
         }
 
+       
         [HttpDelete("{id}")]
-        public OkResult Delete(int id)
+        public string Delete(int id)
         {
-            unitOfWork.PersonRepository.Remove(id);
-            return Ok();
+            Person person = unitOfWork.PersonRepository.GetById(id);
+            try
+            {
+                // Check if the ID is null
+                if (person ==  null)
+                {
+                    return "ID cannot be null";
+                }
+
+                // Do some logic to delete the product from the database
+                unitOfWork.PersonRepository.Remove(id);
+
+                // Return a success response
+                return "Product deleted successfully";
+            }
+            catch (Exception ex)
+            {
+                return "An error occurred while deleting the product";
+            }
         }
 
         [HttpPost]
-        public void Post(Person person)
+        public string Post(Person person)
         {
+            ValidationResult result = validator.Validate(person);
+            if (!result.IsValid)
+            {
+                return result.ToString();
+            }
+
             unitOfWork.PersonRepository.Insert(person);
+            return "Person Added";
         }
 
 

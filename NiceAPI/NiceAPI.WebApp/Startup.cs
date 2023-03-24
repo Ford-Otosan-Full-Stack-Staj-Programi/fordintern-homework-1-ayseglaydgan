@@ -1,3 +1,4 @@
+using FluentValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,7 +32,7 @@ namespace NiceAPI
             // ABOUT THE DEPENDENCY INJECTION
             services.AddDbContextDI(Configuration);
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+            services.AddScoped<IValidator<Person>, PersonValidator>();
 
 
 
@@ -51,8 +52,6 @@ namespace NiceAPI
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "NiceAPI v1"));
             }
-
-            Console.WriteLine("afdsssssssssssfglfskjgksgjhkslhdgfkjshfgjks");
 
             app.UseHttpsRedirection();
 

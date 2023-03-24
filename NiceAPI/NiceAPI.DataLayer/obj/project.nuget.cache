@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "B/k2qiP9QqihhWaOmlNpF9ExFadq/V57fYIJrwwkoOuIVhEbRT6CbgDDm9hEzZDm2BBkiG0oZhdcZ38Fza7vFw==",
+  "dgSpecHash": "xGT9vDb3BOmgiKDS7IOGtGsns3xwT6OhoEGiYJCdufLstco+M2Ftjgvwn5TQSigK0t3f/vFCkzCNhg/QZEPnlw==",
   "success": true,
   "projectFilePath": "C:\\Users\\aaydoga6\\source\\Repos\\fordintern-homework-1-ayseglaydgan\\NiceAPI\\NiceAPI.DataLayer\\NiceAPI.DataLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aaydoga6\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\aaydoga6\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\aaydoga6\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\aaydoga6\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\aaydoga6\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\aaydoga6\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

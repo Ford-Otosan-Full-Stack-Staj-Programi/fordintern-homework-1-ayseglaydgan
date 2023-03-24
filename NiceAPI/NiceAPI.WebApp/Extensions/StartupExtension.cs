@@ -15,8 +15,7 @@ namespace NiceAPI.WebApp.Extensions
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             // repos
-            services.AddScoped<IGenericRepository<Account>,GenericRepository<Account>>();
-            //services.AddScoped<IGenericRepository<Person>, GenericRepository<Person>>();
+            services.AddScoped<IGenericRepository<Person>, GenericRepository<Person>>();
 
            
         }

@@ -10,8 +10,6 @@ namespace NiceAPI.DataLayer
             
 
         }
-
-        public DbSet<Account>? Account { get; set; }
         public DbSet<Person>? Person { get; set; }
 
         //  you have defined entity type configurations in your project 

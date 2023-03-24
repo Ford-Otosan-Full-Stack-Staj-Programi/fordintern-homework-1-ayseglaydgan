@@ -69,3 +69,4 @@ C:\Users\aaydoga6\source\Repos\fordintern-homework-1-ayseglaydgan\NiceAPI\NiceAP
 C:\Users\aaydoga6\source\Repos\fordintern-homework-1-ayseglaydgan\NiceAPI\NiceAPI.WebApp\bin\Debug\net5.0\NiceAPI.DataLayer.dll
 C:\Users\aaydoga6\source\Repos\fordintern-homework-1-ayseglaydgan\NiceAPI\NiceAPI.WebApp\bin\Debug\net5.0\NiceAPI.DataLayer.pdb
 C:\Users\aaydoga6\source\Repos\fordintern-homework-1-ayseglaydgan\NiceAPI\NiceAPI.WebApp\bin\Debug\net5.0\NiceAPI.BaseClass.pdb
+C:\Users\aaydoga6\source\Repos\fordintern-homework-1-ayseglaydgan\NiceAPI\NiceAPI.WebApp\bin\Debug\net5.0\FluentValidation.dll
