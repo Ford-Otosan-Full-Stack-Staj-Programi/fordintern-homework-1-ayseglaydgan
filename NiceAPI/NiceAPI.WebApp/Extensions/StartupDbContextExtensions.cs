@@ -28,6 +28,7 @@ namespace NiceAPI.WebApp.Extensions
                 services.AddDbContext<AppDbContext>(options => options
                    .UseNpgsql(dbConfig)
                    );
+
             }
         }
     }
